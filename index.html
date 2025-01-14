@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar With Bootstrap</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- SIDEBAR -->
+    <div class="wrapper">
+        <aside id="sidebar">
+            <div class="d-flex">
+                <button class="toggle-btn" type="button">
+                    <i class="lni lni-grid-alt"></i>
+                </button>
+                <div class="sidebar-logo mt-3">
+                    <a href="#"><img src="assets/img/top.png" width="100px" alt=""><br>
+                        <p class="fs-3">IRSO PROJ</p>
+                    </a>
+                </div>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-user"></i>
+                        <span>Perfil</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
+                        <i class="lni lni-layout"></i>
+                        <span>Dados</span>
+                    </a>
+                    <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">
+                                Sensores
+                            </a>
+                            <ul id="multi-two" class="sidebar-dropdown list-unstyled collapse">
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Sensor de Movimento</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Sensor de Metais</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Sensor de Fumo</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Sensor de Metais</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Sensor de Metais</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Sensor de Metais</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#multi-three" aria-expanded="false" aria-controls="multi-two">
+                                Atuadores
+                            </a>
+                            <ul id="multi-three" class="sidebar-dropdown list-unstyled collapse">
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Atuador 1</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Atuador 2</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Atuador 3</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Atuador 4</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Atuador 5 </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Atuador 6 </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Atuador 6 </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="#" class="sidebar-link">
+                    <i class="lni lni-exit mb-4"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand px-4 py-3">
+                <form action="#" class="d-none d-sm-inline-block">
+
+                </form>
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                <img src="assets/img/account.png" class="avatar img-fluid" alt="">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end rounded">
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Dados Sensores e Atuadores -->
+
+            <main class="content px-3 py-4">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <h3 class="fw-bold fs-4 mb-3">Painel de Administração Museu</h3>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="card border-0 bg-light">
+                                    <div class="card-body py-4">
+                                        <h5 class="mb-2 fw-bold">
+                                            Dados Sensores
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 ">
+                                <div class="card border-0 bg-light">
+                                    <div class="card-body py-4">
+                                        <h5 class="mb-2 fw-bold">
+                                            Dados Atuadores
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+
+            <!-- Imagens Câmaras -->
+
+            <main class="content px-3 py-4">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <h3 class="fw-bold fs-4 mb-3">Imagens Câmara</h3>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="card border-0 bg-light">
+                                    <div class="card-body py-4">
+                                        <h5 class="mb-2 fw-bold">
+                                            Câmara 1
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 ">
+                                <div class="card border-0 bg-light">
+                                    <div class="card-body py-4">
+                                        <h5 class="mb-2 fw-bold">
+                                            Câmara 2
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- COLUNA 2 -->
+                            <div class="col-12 col-md-6 mt-5">
+                                <div class="card border-0 bg-light">
+                                    <div class="card-body py-4">
+                                        <h5 class="mb-2 fw-bold">
+                                            Câmara 3
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 mt-5 ">
+                                <div class="card border-0 bg-light">
+                                    <div class="card-body py-4">
+                                        <h5 class="mb-2 fw-bold">
+                                            Câmara 4
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- FOOTER -->
+            <footer class="bg-light text-center text-dark py-4">
+                <div class="container">
+                    <!-- Logo -->
+                    <div>
+                        <img src="assets/img/logo_leiria.png" width="230px" height="93px" alt="Logo" class="me-2">
+                    </div>
+
+
+                    <!-- Direitos Autorais -->
+                    <div class="text-muted small">
+                        © 2024 Direitos de Autor, Todos os direitos reservados
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!--SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
